@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Bookworm</string>
+    <string name="title_activity_landingpage">Bookworm</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">BookWork</string>
+    <string name="nav_header_subtitle">Buy and sell books</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sell">Sell Book</string>
+    <string name="enter_name">Enter Book name</string>
+    <string name="enter_details">Enter Book Details</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="enter_course">Enter Course</string>
+    <string name="enter_semester">Enter Semester</string>
+    <string name="enter_subject">Enter Subject</string>
+    <string name="upload_image1">Upload image Front</string>
+    <string name="upload_image2">Upload Image Back</string>
+    <string name="Post">Post ad</string>
+    <string name="warning">I agree Terms of Service and Privacy Policy</string>
+    <string name="welcome">Welcome</string>
+    <string name="discover">Buy and sell books</string>
+    <string name="email_hint">Enter email</string>
+    <string name="password">Enter Password</string>
+    <string name="sign_up">Sign in</string>
+    <string name="start_terms">I agree Terms of Service and Privacy Policy.</string>
+    <string name="start">New user? Register</string>
+    <string name="register">Register with Bookworm</string>
+    <string name="fullname">Enter Fullname</string>
+    <string name="phone">Phone Number</string>
+    <string name="phonenumber">Phone number</string>
+    <string name="address">Enter address</string>
+    <string name="pincode">Enter Pincode</string>
+    <string name="cse">B.TECH/CSE</string>
+    <string name="civil">B.TECH/CIVIL</string>
+    <string name="mech">B.TECH/MECHANICAL</string>
+    <string name="electronics">B.TECH/ECE</string>
+    <string name="commerce">B.COMMERCE</string>
+    <string name="bsc">B. SCIENCE</string>
+    <string name="selectsem">Select Semester</string>
+    <string name="selectsub">Select Subject</string>
+    <string name="Browse">Browse Books</string>
+    <string name="seller">Seller Information</string>
+    <string name="book_details">Book Details</string>
+    <string name="browse_ads">Browse Ads</string>
+    <string name="profile">My Profile</string>
+    <string name="update">Update Details</string>
+    <string name="profileup">Update Profile</string>
+    <string name="enter_desc">Enter Description</string>
+    <string name="no">No record Found.</string>
+    <string name="Search">Search Books</string>
+    <string name="search_hint">Enter Book name</string>
+    <string name="search">Search</string>
+    <string name="aboutus"> Welcome to online CSE bookstore.\n Love to read? You will find that there are many communities made specifically for book lovers of any possible genre, whether to buy, browser, or talk about the books that have impacted your life. Whether you are looking for a textbook, a comic book, a romance, or a cookbook, the chances are very good that you will find it with one of the book websites listed below. Most of these sites offer the reader a chance to get involved in discussions, reviews, and active conversation; in addition, buying books on the Web can end up in some serious savings, not to mention the amazing variety that is available to you.
+    \n Our Office\n Lovely Professional University
+           \n Email: kalpanaprakaz07@gmail.com
+           \n Email: kanishkabhardwaj2013@gmail.com
+           \n Email: kirti2714@gmail.com
+           \n Email: mahimapundir13@gmail.com
+    </string>
+</resources>

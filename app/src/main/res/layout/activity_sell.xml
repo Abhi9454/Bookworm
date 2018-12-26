@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sell">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:background="#0077b5"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_details"
+                    android:layout_margin="10dp"
+                    android:textSize="22sp"
+                    android:textColor="#ffffff"/>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/book_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_name"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#333"/>
+
+            <EditText
+                android:id="@+id/book_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_price"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#333"/>
+
+            <EditText
+                android:id="@+id/book_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_desc"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#333"/>
+
+            <Spinner
+                android:id="@+id/spinnercourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:spinnerMode="dropdown"/>
+
+            <Spinner
+                android:id="@+id/spinnersemester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:spinnerMode="dropdown"/>
+
+            <Spinner
+                android:id="@+id/spinnersubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:spinnerMode="dropdown"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/frontimage"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="@string/upload_image1"
+                android:textAllCaps="false"
+                android:background="@drawable/start_button"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/backimage"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="@string/upload_image2"
+                android:textAllCaps="false"
+                android:background="@drawable/start_button"
+                android:fontFamily="sans-serif"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/postad"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/second_start"
+                android:fontFamily="sans-serif"
+                android:textColor="#ffffff"
+                android:text="@string/Post"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/progressell"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bc000000"
+        android:layout_marginTop="45dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

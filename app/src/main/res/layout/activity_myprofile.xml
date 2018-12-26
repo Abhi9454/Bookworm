@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Start">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update"
+                android:textColor="#dddddd"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_margin="15dp"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:id="@+id/emails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:drawablePadding="15dp"
+                android:cursorVisible="false"
+                android:drawableStart="@drawable/email"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="#dddddd"
+                android:textColorHint="#dddddd" />
+
+
+            <EditText
+                android:id="@+id/fullnames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:textColor="#dddddd"
+                android:cursorVisible="false"
+                android:drawablePadding="15dp"
+                android:drawableStart="@drawable/fullname"
+                android:hint="@string/fullname"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColorHint="#dddddd" />
+
+            <EditText
+                android:id="@+id/phonenumbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:textColor="#dddddd"
+                android:cursorVisible="false"
+                android:drawablePadding="15dp"
+                android:drawableStart="@drawable/phone"
+                android:hint="@string/phonenumber"
+                android:singleLine="true"
+                android:textColorHint="#dddddd" />
+
+            <EditText
+                android:id="@+id/addresss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:textColor="#dddddd"
+                android:cursorVisible="false"
+                android:drawablePadding="15dp"
+                android:drawableStart="@drawable/location"
+                android:hint="@string/address"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textColorHint="#dddddd" />
+
+            <EditText
+                android:id="@+id/pincodes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:textColor="#dddddd"
+                android:drawablePadding="15dp"
+                android:cursorVisible="false"
+                android:drawableStart="@drawable/pincode"
+                android:hint="@string/pincode"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textColorHint="#dddddd" />
+
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/email_update"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:background="@drawable/second_start"
+                android:fontFamily="sans-serif"
+                android:text="@string/profileup"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/progressed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bc000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true" />
+    </RelativeLayout>
+</RelativeLayout>

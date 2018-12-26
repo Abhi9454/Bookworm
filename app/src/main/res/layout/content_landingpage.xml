@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    tools:context=".landingpage">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <RelativeLayout
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/headviewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+
+                <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                    android:id="@+id/dots_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/headviewpager"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    app:dampingRatio="0.5"
+                    app:dotsColor="#111111"
+                    app:dotsCornerRadius="2dp"
+                    app:dotsSize="10dp"
+                    app:dotsSpacing="2dp"
+                    app:dotsStrokeWidth="2dp"
+                    app:stiffness="300" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/compscience"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="#fff"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="4dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:background="@drawable/computer"
+                            android:scaleType="centerCrop" />
+
+                        <RelativeLayout
+                            android:layout_width="170dp"
+                            android:layout_height="170dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:text="@string/cse"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/bece"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="#fff"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="4dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:background="@drawable/elec" />
+
+                        <RelativeLayout
+                            android:layout_width="170dp"
+                            android:layout_height="170dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:text="@string/electronics"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/bmech"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="#fff"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="4dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:background="@drawable/machine"
+                            android:scaleType="fitCenter" />
+
+                        <RelativeLayout
+                            android:layout_width="170dp"
+                            android:layout_height="170dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:text="@string/mech"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/bcivil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="#fff"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="4dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:background="@drawable/civic" />
+
+                        <RelativeLayout
+                            android:layout_width="170dp"
+                            android:layout_height="170dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:text="@string/civil"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/bcommerce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="#fff"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="4dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:background="@drawable/commerce"
+                            android:scaleType="centerCrop" />
+
+                        <RelativeLayout
+                            android:layout_width="170dp"
+                            android:layout_height="170dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:text="@string/commerce"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/bscience"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardBackgroundColor="#fff"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="4dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:background="@drawable/science" />
+
+                        <RelativeLayout
+                            android:layout_width="170dp"
+                            android:layout_height="170dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:text="@string/bsc"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
